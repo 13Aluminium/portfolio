@@ -300,12 +300,12 @@ h6 {
 }
 
 .project1 {
-      background: url(https://images.unsplash.com/photo-1540349220179-09d3866f2e74?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2600&q=80) no-repeat 50% 50%;
+      background: url(pngegg.png) no-repeat 50% 50%;
       background-size: cover;
 }
 
 .project1::after {
-      content: "timeless flow.";
+      content: "yi.";
       font-family: "Roboto Mono";
       font-size: 36px;
       position: relative;
@@ -605,8 +605,8 @@ textarea:focus {
 .next p {
       text-align: right;
 }
-
-/* .ayush{
+ 
+ .ayush{
       display: flex;
       flex-wrap: wrap;
-} */
+} 
