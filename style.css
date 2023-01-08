@@ -610,3 +610,117 @@ textarea:focus {
       display: flex;
       flex-wrap: wrap;
 } 
+/* error prone zone */
+/* common styles !!! YOU DON'T NEED THEM */
+.container {
+  margin: 60px auto 0px auto;
+  text-align: center;
+}
+.container h1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-size: 30px;
+  text-transform: uppercase;
+  color: #212121;
+  letter-spacing: 3px;
+}
+.container h1 span {
+  display: inline-block;
+}
+.container h1 span:before, .container h1 span:after {
+  content: "";
+  display: block;
+  width: 34px;
+  height: 2px;
+  background-color: #212121;
+  margin: 0px 0px 0px 2px;
+}
+
+.effect {
+  width: 100%;
+  padding: 50px 0px 70px 0px;
+  background-color: #212121;
+}
+.effect h2 {
+  color: #fff;
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  font-size: 25px;
+  letter-spacing: 3px;
+}
+.effect:nth-child(2) {
+  margin-top: 50px;
+}
+.effect:nth-child(2n+1) {
+  background-color: #fff;
+}
+.effect:nth-child(2n+1) h2 {
+  color: #212121;
+}
+.effect:nth-child(2n) a {
+  color: #fff;
+  border-color: #fff;
+}
+.effect .buttons {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+/* styles for a common effect !!!YOU NEED THEM */
+.effect {
+  /* display: flex; */ /*for the middle*/
+}
+.effect a {
+  text-decoration: none !important;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin-right: 20px;
+  font-size: 25px;
+  overflow: hidden;
+  position: relative;
+  color: #212121;
+  border: 2px solid #212121;
+}
+.effect a i {
+  position: relative;
+  z-index: 3;
+}
+.effect a:last-child {
+  margin-right: 0px;
+}
+.effect a:before {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+.effect a i {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* lavinia effect */
+.effect.lavinia a {
+  transition: border-top-color 0.2s linear 0s, border-right-color 0.2s linear 0.1s, border-bottom-color 0.2s linear 0.2s, border-left-color 0.2s linear 0.3s;
+  overflow: visible;
+}
+.effect.lavinia a:hover {
+  border-color: rgba(255, 255, 255, 0);
+}
+.effect.lavinia a:after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: -2px;
+  left: -2px;
+  border: 2px dashed #fff;
+  position: absolute;
+  border-radius: 50%;
+}
+
