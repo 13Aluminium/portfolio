@@ -46,6 +46,23 @@ html, body {
       blinkTextCussor 50ms steps(30) infinite normal;
 }
 
+.line_skills {
+      width: 20em;
+      top: 50%;
+      margin: auto;
+      border-right: 1px solid rgba(255, 255, 255, 0.75); /*this is a temporary solution*/
+      text-align: center;
+      white-space: nowrap;
+      overflow: hidden;
+      transform: translateY(-50%);
+      font-size: 200%;
+}
+
+.anim-typewriter_skills {
+      animation: typewriter 4s steps(30) 1s 1 normal both,
+      blinkTextCussor 50ms steps(30) infinite normal;
+}
+
 @keyframes typewriter {
       from {
             width: 0;
