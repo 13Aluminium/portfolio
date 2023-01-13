@@ -46,29 +46,28 @@ html, body {
       blinkTextCussor 50ms steps(30) infinite normal;
 }
 
-.line_skills {
-      width: 20em;
-      top: 50%;
-      margin: auto;
-      border-right: 1px solid rgba(255, 255, 255, 0.75); /*this is a temporary solution*/
-      text-align: center;
-      white-space: nowrap;
-      overflow: hidden;
-      transform: translateY(-50%);
-      font-size: 200%;
-}
 
-.anim-typewriter_skills {
-      animation: typewriter 4s steps(30) 1s 1 normal both,
-      blinkTextCussor 50ms steps(30) infinite normal;
-}
+    .typed-out{
+      overflow: hidden;
+      border-right: .15em solid orange;
+      white-space: nowrap;
+      font-size: 1.6rem;
+      width: 0;
+      animation: typing 4s forwards;
+  }
+  
+    @keyframes typing {
+      from { width: 0 }
+      to { width: 18rem; }
+    }
+    
 
 @keyframes typewriter {
       from {
             width: 0;
       }
       to {
-            width: 100%;
+            width:100%;
       }
 }
 
