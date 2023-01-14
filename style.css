@@ -53,6 +53,7 @@ html, body {
       white-space: nowrap;
       font-size: 1.6rem;
       width: 0;
+      text-align: center;
       animation: typing 4s forwards;
   }
   
