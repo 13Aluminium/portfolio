@@ -46,6 +46,18 @@ html, body {
       blinkTextCussor 50ms steps(30) infinite normal;
 }
 
+.typed-out-index{
+      overflow: hidden;
+      border-right: .15em solid orange;
+      white-space: nowrap;
+      font-size: 1.6rem;
+      text-align: center;
+      animation: typing_index 4s forwards;
+  }
+  @keyframes typing_index {
+      from { width: 0 }
+      to { width: 16em; }
+    }
 
 .typed-out{
       overflow: hidden;
