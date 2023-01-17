@@ -52,7 +52,7 @@ html, body {
       white-space: nowrap;
       font-size: 1.6rem;
       text-align: center;
-      animation: typing_index 4s forwards;
+      animation: typing_index 5s forwards;
   }
   @keyframes typing_index {
       from { width: 0 }
