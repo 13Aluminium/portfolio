@@ -8,7 +8,7 @@ This portfolio is built using React.js and Chakra UI. It allows you to quickly c
 |    ![experience](example/Experience.gif)    | ![projects](example/Projects.png) |
 | :-----------------------------------------: | :-------------------------------: |
 |       Document your work experiences        |    Showcase your best projects    |
-| ![otherprojects](example/OtherProjects.gif) |   ![mobile](example/Mobile.gif)   |
+| ![otherprojects](example/OtherProjects.gif) |   ![mobile](example/m.mp4)   |
 |        Include your smaller projects        |     Mobile-responsive design      |
 
 ## Getting Started
