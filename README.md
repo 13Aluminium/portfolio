@@ -5,11 +5,11 @@
 This portfolio is built using React.js and Chakra UI. It allows you to quickly create and customize your portfolio website using markdown files.
 
 
-|    ![experience](example/Experience.png)    | ![projects](example/Projects.png) |
-| :-----------------------------------------: | :-------------------------------: |
-|             Contact Section                 |    Showcase your best projects    |
-| ![otherprojects](example/OthrPrgts.png)     |   ![mobile](example/m.gif)        |
-|        Include your smaller projects        |     Mobile-responsive design      |
+|    ![experience](example/Experience.png)        | ![projects](example/Projects.png) |
+| :--------------------------------------------:  | :-------------------------------: |
+|             Contact Section                     |    Showcase your best projects    |
+| ![otherprojects](example/OthrPrgts.png)         |     ![mobile](example/m.gif)      |
+|        Include your smaller projects            |     Mobile-responsive design      |
 
 ## Getting Started
 
@@ -131,6 +131,6 @@ You can customize the design of your website by modifying the `theme.js` file lo
 
 ## Usage
 
-You may use this template for your own portfolio as long as you give me proper credit by linking back to my profile.
+You may use this template for your own portfolio.
 
 For more details on hosting this site, you may refer to [A Step-by-Step Guide: Deploying on Netlify](https://www.netlify.com/blog/2016/09/29/a-step-by-step-guide-deploying-on-netlify/)
