@@ -4,7 +4,7 @@
 
 This portfolio is built using React.js and Chakra UI. It allows you to quickly create and customize your portfolio website using markdown files.
 
-|    ![experience](example/Experience.gif)    | ![projects](example/Projects.gif) |
+|    ![experience](example/Experience.gif)    | ![projects](example/Projects.mp4) |
 | :-----------------------------------------: | :-------------------------------: |
 |       Document your work experiences        |    Showcase your best projects    |
 | ![otherprojects](example/OtherProjects.gif) |   ![mobile](example/Mobile.gif)   |
