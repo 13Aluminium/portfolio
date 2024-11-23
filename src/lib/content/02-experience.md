@@ -1,28 +1,3 @@
-### Hello! My name is
-
-# Pawel Golonko
-
-and I'm a web developer.
-
----
-
-## About me
-
-Web developer with **20 years' experience** in creating a wide variety of web solutions, from small business websites to **complex e-commerce platforms** and **enterprise applications** used by specialists around the world. Familiar with all phases of the software development lifecycle. Finds Zen in the aesthetic code.
-
-Geek in love with coding, sound, and visuals, preferably at the same time.
-
-- [greenek.com](https://greenek.com)
-- [pgolonko@gmail.com](mailto:pgolonko@gmail.com)
-
-### Follow
-
-- [github.com/Greenek](https://github.com/Greenek)
-- [dribbble.com/Greenek](https://dribbble.com/Greenek)
-- [/in/pawelgolonko](https://linkedin.com/in/pawelgolonko)
-
----
-
 ## Experience
 
 - ##### February 2024 – present
@@ -166,72 +141,78 @@ Geek in love with coding, sound, and visuals, preferably at the same time.
 
   ### Born
 
----
+<style lang="scss">
+  @import '../styles/theme.scss';
 
-## Skills
+  #experience .markdown-body > ul {
+    position: relative;
 
-### Proficient in
+    &::before {
+      background-color: lighten($background-color, 5%);
+      bottom: 0;
+      content: ' ';
+      left: 20%;
+      margin-left: -1px;
+      position: absolute;
+      top: 0;
+      width: 2px;
+    }
 
-- creating **single-page web applications** and interactive **user interfaces**,
-- writing optimal and **efficient TypeScript** code compatible with current ECMAScript standards,
-- writing **semantic HTML and CSS** code, compliant with W3C standards,
-- producing **clean and readable code** using **design patterns**,
-- solving **complex problems**,
-- **debugging and profiling code** with Chrome DevTools,
-- **frameworks** (Angular), **preprocessors** (Sass) and **other tools** (Git, Eslint).
+    > li {
+      margin: 0 0 0 20%;
+      max-width: 66em;
+      padding-left: 2em;
+      position: relative;
+      width: 80%;
 
-### Knowledge of
+      + li {
+        margin-top: 3em;
+      }
 
-- building efficient **API services**,
-- publishing and maintaining **open source** projects,
-- prototyping **accessible and user-friendly interfaces** using WAI-ARIA standards,
-- automating tasks using **Bash scripts** and **POSIX commands**.
+      > h3 {
+        line-height: 1.1;
+      }
 
-### Additional skills
+      > h5 {
+        background: darken($heading-color, 2%);
+        border-radius: 8px;
+        padding: 2px 10px;
+        position: absolute;
+        right: 104%;
+        text-shadow: 0 1px darken($heading-color, 30%);
+        white-space: nowrap;
+      }
 
-- very good **communication** and **interpersonal** skills,
-- **reliable** and **focused** on providing high-quality product,
-- **fast learner** and always willing to **share knowledge**,
-- can **exit vim** in at least 5 different ways ;).
+      &::before {
+        left: 0;
+        margin: 0;
+        position: absolute;
+        transform: translateX(-50%);
+      }
+    }
 
-### Languages
+    @media screen and (max-width: 1022px) {
+      &::before {
+        left: -1.2em;
+      }
 
-- Polish (native),
-- English (fluent),
-- Norwegian (basic).
+      > li {
+        margin-left: 0;
+        max-width: 100%;
+        padding-left: 0.5em;
+        width: 100%;
 
----
+        > h5 {
+          display: inline-block;
+          margin-bottom: 1.2em;
+          position: static;
+          right: auto;
+        }
 
-## Education
-
-### Master of Science (M.Sc.), Computer Software Engineering
-
-#### Politechnika Białostocka, 2014
-
-> The comparison of the methods of the execution of contact-free interface applying the track of movement in the image from the camera
-
-Implemented algorithms for real-time analysis of images captured by web camera to provide touchless computer interface.
-
-> _#Java_ _#JavaCV_
-
----
-
-## After Hours
-
-### Audiovisual art
-
-Translating sound into image with audio-reactive code and live video mixing.
-
-### Music production
-
-Exploring magical world of producing electronic music. You can find me at [Spotify](https://open.spotify.com/artist/5tdW98UeseeqprXwXAH9DY?si=UGfifZoKQDWUKyA_4p6vKg).
-
-### Nature
-
-Exploring the beauty of Norway.
-
----
-
-Built with **Svelte** and **Markdown**.
-
-Check [the source code](https://github.com/Greenek/cv).
+        &::before {
+          transform: translateX(-1.5em);
+        }
+      }
+    }
+  }
+</style>
