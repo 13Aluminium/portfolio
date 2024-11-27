@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,7 +7,8 @@
   <title>Ayush's Personal Website</title>
   <style>
     /* Fonts */
-    @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap');
 
     /* Color Themes */
     :root {
@@ -16,18 +18,19 @@
     }
 
     .light-mode {
-      --bg-color: #f5f5f5;
+      --bg-color: #ffffff;
       --text-color: #1e1e1e;
       --accent-color: #2196f3;
     }
 
     /* General Styles */
     body {
-      font-family: 'Roboto Mono', monospace;
+      font-family: 'JetBrains Mono', monospace;
       background-color: var(--bg-color);
       color: var(--text-color);
       margin: 0;
       padding: 2rem;
+      transition: background-color 0.3s, color 0.3s;
     }
 
     h1, h2, h3 {
@@ -78,38 +81,81 @@
     .toggle-switch input[type="checkbox"]:checked::before {
       left: 22px;
     }
+        footer {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background-color: var(--bg-color);
+      padding: 1rem 0;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+    }
+
   </style>
 </head>
 <body>
   <div class="toggle-switch">
-    <label for="theme-toggle">Dark mode</label>
-    <input type="checkbox" id="theme-toggle" onclick="toggleTheme()">
+    <span id="theme-label">Dark Mode</span>
+    <input type="checkbox" id="theme-toggle">
   </div>
 
-  <h1>hi, i am neuralnet!</h1>
-  <p>i am a second year student, studying computer science.</p>
-  <p>mainly work in machine learning/deep learning.</p>
-  <p>(for detailed info about my projects and blogs, click its header)</p>
+  <h1>hi, i am Luhar Ayush!</h1>
+  <p>i am a final year student, studying computer enginnering.</p>
+  <p>working mainly on Deep Learning and Machine Learning projects and research.</p>
+  
 
-  <h2>projects i have done</h2>
+   <h2>projects i have done</h2>
   <ul>
-    <li>neugrad | neupy | neuaug | ml papers in code | from scratch in c</li>
+    <a href="https://example.com/neugrad" target="_blank">neugrad |</a>    <a href="https://example.com/neupy" target="_blank">neupy |</a>
+    <a href="https://example.com/neuaug" target="_blank">neuaug |</a>
+    <a href="https://example.com/ml-papers-in-code" target="_blank">ml papers in code |</a>
+    <a href="https://example.com/from-scratch-in-c" target="_blank">from scratch in c</a>
   </ul>
 
   <h2>research papers</h2>
-  <p>[working on one rn]</p>
-
-  <h2>blogs</h2>
   <ul>
-    <li>all my ml blogs | how to get into cs | how to get into ml | my thoughts</li>
+    <a href="https://example.com/research-paper-1" target="_blank">[working on one rn]</a>
   </ul>
 
-  <h2>my handwritten notes</h2>
+  
+ <a href="https://example.com/my-resume.pdf" target="_blank"><h2>resume</h2></a>
+
+    <footer>
+        <a href="https://github.com/cneuralnetwork" target="_blank">github</a> | 
+        <a href="https://twitter.com/cneuralnetwork" target="_blank">twitter</a> |
+        <a href="https://buymeacoffee.com/neuralnets" target="_blank">donate</a> 
+    </footer>
 
   <script>
-    function toggleTheme() {
-      document.body.classList.toggle('light-mode');
+    const toggleSwitch = document.getElementById('theme-toggle');
+    const themeLabel = document.getElementById('theme-label');
+
+    // Function to switch theme and update label
+    function switchTheme(event) {
+      if (event.target.checked) {
+        document.body.classList.add('light-mode');
+        themeLabel.textContent = 'Light Mode';
+        localStorage.setItem('theme', 'light');
+      } else {
+        document.body.classList.remove('light-mode');
+        themeLabel.textContent = 'Dark Mode';
+        localStorage.setItem('theme', 'dark');
+      }
     }
+
+    // Event listener for the toggle switch
+    toggleSwitch.addEventListener('change', switchTheme);
+
+    // Load the saved theme on page load
+    const currentTheme = localStorage.getItem('theme');
+    if (currentTheme === 'light') {
+      document.body.classList.add('light-mode');
+      toggleSwitch.checked = true;
+      themeLabel.textContent = 'Light Mode';
+    }
+
   </script>
 </body>
 </html>
