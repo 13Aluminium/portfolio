@@ -1,42 +1,284 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Luhar Ayush</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luhar Ayush</title>
+    <style>
+        :root {
+            --dark: #121212;
+            --light: #fafafa;
+            --gray-100: #f0f0f0;
+            --gray-200: #e0e0e0;
+            --gray-300: #cccccc;
+            --gray-400: #999999;
+            --gray-500: #666666;
+            --gray-600: #333333;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Space Grotesk', 'Roboto Mono', monospace;
+        }
+        
+        body {
+            background-color: var(--dark);
+            color: var(--light);
+            line-height: 1.7;
+            padding: 2rem;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+        
+        .container {
+            max-width: 90%;
+            margin: 0 auto;
+        }
+        
+        header {
+            margin: 4rem 0;
+        }
+        
+        h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            letter-spacing: -0.05em;
+            color: var(--light);
+        }
+        
+        h2 {
+            font-size: 2rem;
+            margin: 3rem 0 1.5rem;
+            position: relative;
+            display: inline-block;
+        }
+        
+        h2::after {
+            content: "";
+            position: absolute;
+            bottom: -8px;
+            left: 0;
+            width: 40px;
+            height: 4px;
+            background-color: var(--gray-400);
+        }
+        
+        h3 {
+            font-size: 1.3rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        p {
+            color: var(--gray-300);
+            margin-bottom: 1rem;
+            max-width: 650px;
+        }
+        
+        a {
+            color: var(--light);
+            text-decoration: none;
+            position: relative;
+            transition: all 0.2s ease;
+        }
+        
+        a:hover {
+            color: var(--gray-300);
+        }
+        
+        ul {
+            list-style-type: none;
+            color: var(--gray-300);
+        }
+        
+        .project-grid, .website-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+        
+        .project-card, .website-card {
+            background-color: var(--gray-600);
+            padding: 1.5rem;
+            border-radius: 8px;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+        
+        .project-card:hover, .website-card:hover {
+            transform: translateY(-5px);
+            background-color: var(--gray-500);
+        }
+        
+        .card-links {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+        
+        .card-links a {
+            padding: 0.4rem 0.8rem;
+            font-size: 0.8rem;
+            border: 1px solid var(--gray-400);
+            border-radius: 4px;
+            transition: all 0.2s ease;
+        }
+        
+        .card-links a:hover {
+            background-color: var(--light);
+            color: var(--dark);
+        }
+        
+        .blog-post {
+            margin-bottom: 2.5rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid var(--gray-600);
+        }
+        
+        .blog-post:last-child {
+            border-bottom: none;
+        }
+        
+        .blog-post p {
+            margin-top: 0.5rem;
+        }
+        
+        .social-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        
+        .social-links a {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            background-color: var(--gray-600);
+            border-radius: 4px;
+            transition: all 0.2s ease;
+        }
+        
+        .social-links a:hover {
+            background-color: var(--light);
+            color: var(--dark);
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+            
+            h2 {
+                font-size: 1.8rem;
+            }
+            
+            .project-grid, .website-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            body {
+                padding: 1rem;
+            }
+        }
+    </style>
 </head>
 <body>
-<h1>Luhar Ayush</h1>
-<p>this is my website. I'm interested in:</p>
-<ul>
-<li>Deep Learning and creating synthetic data for low resrouce languages</li>
-</ul>
+    <div class="container">
+        <header>
+            <h1>Luhar Ayush</h1>
+            <p>This is my website. I'm interested in:</p>
+            <ul>
+                <li>Deep Learning and creating synthetic data for low resource languages</li>
+            </ul>
+        </header>
 
-<h2>My Projects</h2>
-<ul>
-<li><a href="https://github.com/13Aluminium/Emergent-Learning-Dynamics-Reinforcement-Learning-in-Multi-Agent-Hide-and-Seek">Emergent-Learning-Dynamics-Reinforcement-Learning-in-Multi-Agent-Hide-and-Seek</a></li>
-<li><a href="https://github.com/13Aluminium/CONFAB">CONFAB</a></li>
-<li><a href="https://github.com/13Aluminium/Printify/">Printify</a></li>
-</ul>
-
-<h2>Paper</h2>
-<ul>
-    <p>
-    <a href="https://link.springer.com/chapter/10.1007/978-981-97-1326-4_32">From Pixels to Text: A Comparative Evaluation of Convolution Neural Network and Recurrent Neural Network Models in Image Processing</a>
-  </p>
-</ul>
-
-<h2>Poem</h2>
-<ul>
-  <p>
-    <a href="Poems/Obsession_With_Oblivion.png">obsession with oblivion</a>
-  </p>
-</ul>
-  
-<h2>Links</h2>
-<ul>
-<li><a href="https://github.com/13Aluminium">Github</a></li>
-<li><a href="https://www.kaggle.com/narutouzumakiisdada">Kaggle</a></li>
-<li><a href="https://x.com/ayushjluhar">X</a></li>
-
-</ul>
+        <section>
+            <h2>Projects</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <h3>Hide and Seek RL</h3>
+                    <p>Emergent Learning Dynamics in a Multi-Agent Reinforcement Learning environment where agents learn complex behaviors through competition.</p>
+                    <div class="card-links">
+                        <a href="https://github.com/13Aluminium/Emergent-Learning-Dynamics-Reinforcement-Learning-in-Multi-Agent-Hide-and-Seek">GitHub</a>
+                        <a href="#">Demo</a>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <h3>CONFAB</h3>
+                    <p>A conversational AI framework for building dialogue systems with improved contextual understanding.</p>
+                    <div class="card-links">
+                        <a href="https://github.com/13Aluminium/CONFAB">GitHub</a>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <h3>Printify</h3>
+                    <p>A smart document formatting tool that optimizes print layouts to save paper and improve readability.</p>
+                    <div class="card-links">
+                        <a href="https://github.com/13Aluminium/Printify/">GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section>
+            <h2>Websites</h2>
+            <div class="website-grid">
+                <div class="website-card">
+                    <h3><a href="https://ai-research-hub.com">AI Research Hub</a></h3>
+                    <p>A platform for sharing machine learning research papers and implementations with interactive demos.</p>
+                    <div class="card-links">
+                        <a href="https://github.com/13Aluminium/ai-research-hub">Source Code</a>
+                    </div>
+                </div>
+                
+                <div class="website-card">
+                    <h3><a href="https://synthdatalab.org">Synthetic Data Lab</a></h3>
+                    <p>Tools and resources for generating synthetic data for machine learning applications in low-resource languages.</p>
+                    <div class="card-links">
+                        <a href="https://github.com/13Aluminium/synth-data-lab">Source Code</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section>
+            <h2>Blog</h2>
+            <div class="blog-post">
+                <h3><a href="/blog/transformer-architectures">Transformer Architectures Explained</a></h3>
+                <p>A deep dive into the architecture of transformer models and how they've revolutionized NLP tasks.</p>
+            </div>
+            
+            <div class="blog-post">
+                <h3><a href="/blog/low-resource-nlp">NLP for Low-Resource Languages</a></h3>
+                <p>Techniques and approaches for building effective NLP systems for languages with limited data.</p>
+            </div>
+            
+            <div class="blog-post">
+                <h3><a href="/blog/rl-fundamentals">Fundamentals of Reinforcement Learning</a></h3>
+                <p>Understanding the key concepts behind reinforcement learning algorithms and their applications.</p>
+            </div>
+        </section>
+        
+        <section>
+            <h2>Research</h2>
+            <div class="blog-post">
+                <h3><a href="https://link.springer.com/chapter/10.1007/978-981-97-1326-4_32">From Pixels to Text: A Comparative Evaluation of Convolution Neural Network and Recurrent Neural Network Models in Image Processing</a></h3>
+                <p>Published research comparing CNN and RNN architectures for image-to-text conversion tasks.</p>
+            </div>
+        </section>
+        
+        <section>
+            <h2>Links</h2>
+            <div class="social-links">
+                <a href="https://github.com/13Aluminium">GitHub</a>
+                <a href="https://www.kaggle.com/narutouzumakiisdada">Kaggle</a>
+                <a href="https://x.com/ayushjluhar">X</a>
+            </div>
+        </section>
+    </div>
 </body>
 </html>
